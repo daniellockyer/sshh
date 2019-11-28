@@ -1,2 +1,3 @@
-# qssh
+# sshh
+
 Quickly SSH into machines
