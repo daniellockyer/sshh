@@ -9,17 +9,6 @@ Problem:
 * unable to use subdomain because it can expose the IP
 * `.ssh/config` doesn't support grouping of servers
 
-## Installation
-
-For now:
-
-(You will need the Rust compiler installed)
-
-1. Clone the repository and build using `cargo build --release`
-1. Install using `cargo install --path .`
-
-I am working on releasing binaries/packages.
-
 ## Usage
 
 ```bash
@@ -33,6 +22,17 @@ $ sshh -g acme-corp main # connect to the `main` host under the acme-corp group
 Given an ambiguous host name, `sshh` will connect to the last one defined in the config file.
 
 `sshh` ends up calling `ssh` with the suitable arguments, so make sure it is installed.
+
+## Installation
+
+For now:
+
+(You will need the Rust compiler installed)
+
+1. Clone the repository and build using `cargo build --release`
+1. Install using `cargo install --path .`
+
+I am working on releasing binaries/packages.
 
 ## Hosts config
 
