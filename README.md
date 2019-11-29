@@ -8,6 +8,7 @@ Problem:
 * cannot use domain name because they sit behind Cloudflare
 * unable to use subdomain because it can expose the IP
 * `.ssh/config` doesn't support grouping of servers
+* My `.bashrc` file was filling up with messy `alias`es
 
 ## Usage
 
