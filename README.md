@@ -2,6 +2,8 @@
 
 _(aka `ssh hosts`)_ - Quickly SSH into hosts
 
+[![Actions Status](https://github.com/daniellockyer/sshh/workflows/CI/badge.svg)](https://github.com/daniellockyer/sshh/actions)
+
 Problem:
 
 * dozens of hosts to SSH in to but I can never remember the particular IP
