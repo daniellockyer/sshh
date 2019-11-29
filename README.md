@@ -5,8 +5,8 @@ _(aka `ssh hosts`)_ - Quickly SSH into hosts
 Problem:
 
 * dozens of hosts to SSH in to but I can never remember the particular IP
-* cannot use domain name because they sit behind Cloudflare
-* unable to use subdomain because it can expose the IP
+* cannot use domain name because they sit behind Cloudflare (sometimes)
+* unable to use subdomain because it can expose the IP (sometimes)
 * `.ssh/config` doesn't support grouping of servers
 * My `.bashrc` file was filling up with messy `alias`es
 
