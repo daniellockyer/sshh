@@ -26,15 +26,12 @@ Given an ambiguous host name, `sshh` will connect to the last one defined in the
 
 ## Installation
 
-(For now, you will need the Rust compiler + toolchain installed)
-
 1. Installing using cargo: `cargo install sshh`
+1. Download a binary from the [GitHub Releases page](https://github.com/daniellockyer/sshh/releases)
 1. Build and install yourself:
     1. Clone the repository
     1. Build using `cargo build --release`
     1. Install using `cargo install --path .`
-
-I am working on releasing binaries/packages.
 
 ## Config
 
