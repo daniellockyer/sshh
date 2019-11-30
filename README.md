@@ -3,6 +3,7 @@
 _(aka `ssh hosts`)_ - Quickly SSH into hosts
 
 [![Actions Status](https://github.com/daniellockyer/sshh/workflows/CI/badge.svg)](https://github.com/daniellockyer/sshh/actions)
+[![Crates.io](https://img.shields.io/crates/v/sshh.svg)](https://crates.io/crates/sshh)
 
 Problem:
 
