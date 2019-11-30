@@ -45,6 +45,7 @@ A server has the following options:
 * `host`: the domain or IP address
 * `port` (optional): defaults to 22
 * `forwarding` (optional): whether to enable authentication agent forwarding, defaults to false
+* `identity_key` (optional): the location of the identity key to use, defaults to nothing
 
 Servers can be put into groups, or listed separately. List individual servers under the `servers` mapping, and groups under `groups`. The config file is deserialized using [`serde_yaml`](https://docs.rs/serde_yaml/). The example below should give a good indication of the expected format.
 
