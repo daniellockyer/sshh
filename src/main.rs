@@ -92,7 +92,6 @@ fn main() {
         for server in server_mapping.servers {
             if server.name == config_name {
                 server_found = Some(server);
-                break;
             }
         }
     }
@@ -107,7 +106,6 @@ fn main() {
         for server in group.servers {
             if server.name == config_name {
                 server_found = Some(server);
-                break;
             }
         }
     }
