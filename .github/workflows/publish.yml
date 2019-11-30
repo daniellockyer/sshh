@@ -11,25 +11,34 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
+        name: [
+            windows,
+            macos,
+            linux
+        ]
+
         include:
-          - os: ubuntu-latest
+          - name: linux
+            os: ubuntu-latest
             artifact_name: sshh
             asset_name: sshh-linux-amd64
-          - os: windows-latest
+          - name: windows
+            os: windows-latest
             artifact_name: sshh.exe
             asset_name: sshh-windows-amd64
-          - os: macos-latest
+          - name: macos
+            os: macos-latest
             artifact_name: sshh
             asset_name: sshh-macos-amd64
 
     steps:
     - uses: actions/checkout@v1
-    
+
     - uses: actions-rs/toolchain@v1
       with:
         profile: minimal
         toolchain: stable
-    
+
     - name: Build
       run: cargo build --release --locked
 
