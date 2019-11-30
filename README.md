@@ -15,11 +15,9 @@ Problem:
 ## Usage
 
 ```bash
-$ sshh project-server # connect to the project-server
+$ sshh project-server # connect to the `project-server` host
 
-$ sshh main # connect to the last `main` host specified
-
-$ sshh -g acme-corp main # connect to the `main` host under the acme-corp group
+$ sshh -g acme-corp main # connect to the `main` host under the `acme-corp` group
 ```
 
 Given an ambiguous host name, `sshh` will connect to the last one defined in the config file.
@@ -37,7 +35,7 @@ For now:
 
 I am working on releasing binaries/packages.
 
-## Hosts config
+## Config
 
 `sshh` uses the yaml file format, generally stored in `~/.config/sshh.yml`. You can pass a custom config through the `-c` flag.
 
