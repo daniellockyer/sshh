@@ -13,6 +13,8 @@ Problem:
 * `.ssh/config` doesn't support grouping of servers
 * My `.bashrc` file was filling up with messy `alias`es
 
+`sshh` allows you to list all your hosts in a configuration file, and then connect to them using a name.
+
 ## Usage
 
 ```bash
