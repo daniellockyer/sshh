@@ -63,11 +63,17 @@ fn main() {
                 .value_name("GROUP")
                 .takes_value(true),
         )
-        .arg(Arg::with_name("list").short("l").long("list"))
+        .arg(
+            Arg::with_name("list")
+                .help("List available servers")
+                .short("l")
+                .long("list"),
+        )
         .arg(
             Arg::with_name("name")
                 .help("Sets the server name")
                 .required_unless("list")
+                .conflicts_with("list")
                 .index(1),
         )
         .get_matches();
