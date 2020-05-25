@@ -1,5 +1,7 @@
 # 🖥️ sshh
 
+test
+
 _(aka `ssh hosts`)_ - Quickly SSH into hosts
 
 [![Actions Status](https://github.com/daniellockyer/sshh/workflows/CI/badge.svg)](https://github.com/daniellockyer/sshh/actions)
