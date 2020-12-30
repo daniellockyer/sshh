@@ -18,18 +18,21 @@ fn default_port() -> i64 {
 }
 
 #[derive(Debug, PartialEq, Deserialize)]
+#[serde(deny_unknown_fields)]
 struct ServerMapping {
     servers: Vec<Server>,
     groups: Vec<ServerGroup>,
 }
 
 #[derive(Debug, PartialEq, Deserialize)]
+#[serde(deny_unknown_fields)]
 struct ServerGroup {
     name: String,
     servers: Vec<Server>,
 }
 
 #[derive(Debug, PartialEq, Deserialize)]
+#[serde(deny_unknown_fields)]
 struct Server {
     name: String,
     host: String,
