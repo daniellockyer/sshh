@@ -29,6 +29,7 @@ struct ServerMapping {
 struct ServerGroup {
     name: String,
     servers: Vec<Server>,
+    identity_file: Option<String>,
 }
 
 #[derive(Debug, PartialEq, Deserialize)]
@@ -125,7 +126,7 @@ fn main() {
             println!("{}:", group.name);
         }
 
-        for server in group.servers {
+        for mut server in group.servers {
             if config_list {
                 println!("  - {}", server.name);
                 continue;
@@ -133,6 +134,11 @@ fn main() {
 
             if let Some(config_name) = config_name {
                 if config_name == server.name {
+                    if server.identity_file.is_empty() {
+                        if let Some(ref group_identity) = group.identity_file {
+                            server.identity_file = group_identity.to_string();
+                        }
+                    }
                     server_found = Some(server);
                 }
             }
