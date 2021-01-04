@@ -89,7 +89,7 @@ fn main() {
         )
         .get_matches();
 
-    let execute_command = matches.value_of("execute").unwrap_or_else(|| "");
+    let execute_command = matches.value_of("execute").unwrap_or("");
     let config_group = matches.value_of("group");
     let config_name = matches.value_of("name");
     let config_list = matches.is_present("list");
