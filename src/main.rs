@@ -68,6 +68,13 @@ fn main() {
                 .takes_value(true),
         )
         .arg(
+            Arg::with_name("execute")
+                .short("e")
+                .long("execute")
+                .value_name("EXECUTE")
+                .takes_value(true),
+        )
+        .arg(
             Arg::with_name("list")
                 .help("List available servers")
                 .short("l")
@@ -82,6 +89,7 @@ fn main() {
         )
         .get_matches();
 
+    let execute_command = matches.value_of("execute").unwrap_or_else(|| "");
     let config_group = matches.value_of("group");
     let config_name = matches.value_of("name");
     let config_list = matches.is_present("list");
@@ -167,6 +175,7 @@ fn main() {
             .arg("-p")
             .arg(format!("{}", server.port))
             .arg(format!("{}@{}", server.user, server.host))
+            .arg(execute_command)
             .status()
             .expect("failed to execute process");
     }
