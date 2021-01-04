@@ -1,7 +1,7 @@
 [package]
 name = "sshh"
 description = "Quickly SSH into hosts"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Daniel Lockyer <hi@daniellockyer.com>"]
 repository = "https://github.com/daniellockyer/sshh"
 homepage = "https://github.com/daniellockyer/sshh"
